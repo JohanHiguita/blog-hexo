@@ -1,0 +1,59 @@
+<h3>
+  <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+  <span>&nbsp;Ultimos 3 posts:</span>
+</h3>
+<div class="list-group">
+  <% var i = 0 %>
+  <% page.posts.each(function(post){ %>
+
+  <% if (i < 3) { %>
+  <a href="<%- url_for(post.path) %>" class="list-group-item">
+    <%= post.title %>
+  </a>
+  <% } %>
+  <% i = i+1 %>
+  <% }) %>
+</div>
+<h3>
+  <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>
+  <span>&nbsp;Historial</span>
+  </h3>
+<div class="list-group">
+  <a href="#" class="list-group-item">
+    Enero
+  </a>
+  <a href="#>" class="list-group-item">
+    Febrero
+  </a>
+  <a href="#" class="list-group-item">
+    Marzo
+  </a>
+  <a href="#" class="list-group-item">
+    Abril
+  </a>
+  <a href="#" class="list-group-item">
+    Mayo
+  </a>
+  <a href="#" class="list-group-item">
+    Junio
+  </a>
+  <a href="#" class="list-group-item">
+    Julio
+  </a>
+  <a href="#" class="list-group-item">
+    Agosto
+  </a>
+  <a href="#" class="list-group-item">
+    Septiembre
+  </a>
+  <a href="#" class="list-group-item">
+    Octubre
+  </a>
+  <a href="#" class="list-group-item">
+    Noviembre
+  </a>
+  <a href="#" class="list-group-item">
+    Diciembre
+  </a>
+</div>
+
